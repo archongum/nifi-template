@@ -1,0 +1,509 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<template encoding-version="1.2">
+    <description>Set attributes
+1. pg_id: process group id
+2. bucket_name: bucket name
+3. flow_name: flow name
+4. target_version: latest(str) or version number(int)</description>
+    <groupId>ef2c1d9a-0168-1000-ffff-ffffdce527c8</groupId>
+    <name>VersioningUpdateFlowVer</name>
+    <snippet>
+        <processGroups>
+            <id>b8139c32-681d-3dc5-0000-000000000000</id>
+            <parentGroupId>7290729c-5cae-35dc-0000-000000000000</parentGroupId>
+            <position>
+                <x>0.0</x>
+                <y>0.0</y>
+            </position>
+            <comments>设置属性
+1. pg_id: 组的id
+2. bucket_name: bucket名字
+3. flow_name: flow名字
+4. target_version: 目标版本号；数字或latest，默认最新latest</comments>
+            <contents>
+                <connections>
+                    <id>1548e8d0-04cf-3398-0000-000000000000</id>
+                    <parentGroupId>b8139c32-681d-3dc5-0000-000000000000</parentGroupId>
+                    <versionedComponentId>93f5c464-4157-380a-a87a-1146e4a494fb</versionedComponentId>
+                    <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
+                    <backPressureObjectThreshold>10000</backPressureObjectThreshold>
+                    <destination>
+                        <groupId>b8139c32-681d-3dc5-0000-000000000000</groupId>
+                        <id>e3f3c2df-8fc7-3252-0000-000000000000</id>
+                        <type>PROCESSOR</type>
+                        <versionedComponentId>323a6388-963c-3ae7-9fb3-c734b9afc83b</versionedComponentId>
+                    </destination>
+                    <flowFileExpiration>0 sec</flowFileExpiration>
+                    <labelIndex>1</labelIndex>
+                    <loadBalanceCompression>DO_NOT_COMPRESS</loadBalanceCompression>
+                    <loadBalancePartitionAttribute></loadBalancePartitionAttribute>
+                    <loadBalanceStatus>LOAD_BALANCE_NOT_CONFIGURED</loadBalanceStatus>
+                    <loadBalanceStrategy>DO_NOT_LOAD_BALANCE</loadBalanceStrategy>
+                    <name></name>
+                    <selectedRelationships>success</selectedRelationships>
+                    <source>
+                        <groupId>b8139c32-681d-3dc5-0000-000000000000</groupId>
+                        <id>fcabf483-1159-381f-0000-000000000000</id>
+                        <type>PROCESSOR</type>
+                        <versionedComponentId>42f33070-c900-396f-bd63-b5c32e3afc35</versionedComponentId>
+                    </source>
+                    <zIndex>0</zIndex>
+                </connections>
+                <connections>
+                    <id>8dab0e94-6eb5-37b6-0000-000000000000</id>
+                    <parentGroupId>b8139c32-681d-3dc5-0000-000000000000</parentGroupId>
+                    <versionedComponentId>c1ab800a-87c3-30a0-a107-6a2caedbeefc</versionedComponentId>
+                    <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
+                    <backPressureObjectThreshold>10000</backPressureObjectThreshold>
+                    <destination>
+                        <groupId>b8139c32-681d-3dc5-0000-000000000000</groupId>
+                        <id>e0bc9898-7dfb-3992-0000-000000000000</id>
+                        <type>PROCESSOR</type>
+                        <versionedComponentId>fd397dec-5fd5-3fe2-86e5-a1bc053ccf79</versionedComponentId>
+                    </destination>
+                    <flowFileExpiration>0 sec</flowFileExpiration>
+                    <labelIndex>1</labelIndex>
+                    <loadBalanceCompression>DO_NOT_COMPRESS</loadBalanceCompression>
+                    <loadBalancePartitionAttribute></loadBalancePartitionAttribute>
+                    <loadBalanceStatus>LOAD_BALANCE_NOT_CONFIGURED</loadBalanceStatus>
+                    <loadBalanceStrategy>DO_NOT_LOAD_BALANCE</loadBalanceStrategy>
+                    <name></name>
+                    <selectedRelationships>success</selectedRelationships>
+                    <source>
+                        <groupId>b8139c32-681d-3dc5-0000-000000000000</groupId>
+                        <id>e3f3c2df-8fc7-3252-0000-000000000000</id>
+                        <type>PROCESSOR</type>
+                        <versionedComponentId>323a6388-963c-3ae7-9fb3-c734b9afc83b</versionedComponentId>
+                    </source>
+                    <zIndex>0</zIndex>
+                </connections>
+                <processors>
+                    <id>e0bc9898-7dfb-3992-0000-000000000000</id>
+                    <parentGroupId>b8139c32-681d-3dc5-0000-000000000000</parentGroupId>
+                    <position>
+                        <x>380.9999978504111</x>
+                        <y>352.999984892469</y>
+                    </position>
+                    <versionedComponentId>fd397dec-5fd5-3fe2-86e5-a1bc053ccf79</versionedComponentId>
+                    <bundle>
+                        <artifact>nifi-standard-nar</artifact>
+                        <group>org.apache.nifi</group>
+                        <version>1.8.0</version>
+                    </bundle>
+                    <config>
+                        <bulletinLevel>WARN</bulletinLevel>
+                        <comments></comments>
+                        <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
+                        <descriptors>
+                            <entry>
+<key>Command Arguments</key>
+<value>
+    <name>Command Arguments</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Command Path</key>
+<value>
+    <name>Command Path</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Ignore STDIN</key>
+<value>
+    <name>Ignore STDIN</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Working Directory</key>
+<value>
+    <name>Working Directory</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Argument Delimiter</key>
+<value>
+    <name>Argument Delimiter</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Output Destination Attribute</key>
+<value>
+    <name>Output Destination Attribute</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Max Attribute Length</key>
+<value>
+    <name>Max Attribute Length</name>
+</value>
+                            </entry>
+                        </descriptors>
+                        <executionNode>ALL</executionNode>
+                        <lossTolerant>false</lossTolerant>
+                        <penaltyDuration>30 sec</penaltyDuration>
+                        <properties>
+                            <entry>
+<key>Command Arguments</key>
+<value>${filename} --pg_id ${pg_id} --bucket_name ${bucket_name} --flow_name ${flow_name} --target_version ${target_version}</value>
+                            </entry>
+                            <entry>
+<key>Command Path</key>
+<value>python3</value>
+                            </entry>
+                            <entry>
+<key>Ignore STDIN</key>
+<value>false</value>
+                            </entry>
+                            <entry>
+<key>Working Directory</key>
+<value>/tmp</value>
+                            </entry>
+                            <entry>
+<key>Argument Delimiter</key>
+<value> </value>
+                            </entry>
+                            <entry>
+<key>Output Destination Attribute</key>
+                            </entry>
+                            <entry>
+<key>Max Attribute Length</key>
+<value>256</value>
+                            </entry>
+                        </properties>
+                        <runDurationMillis>0</runDurationMillis>
+                        <schedulingPeriod>0 sec</schedulingPeriod>
+                        <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
+                        <yieldDuration>1 sec</yieldDuration>
+                    </config>
+                    <executionNodeRestricted>false</executionNodeRestricted>
+                    <name>ExecuteStreamCommand</name>
+                    <relationships>
+                        <autoTerminate>true</autoTerminate>
+                        <name>nonzero status</name>
+                    </relationships>
+                    <relationships>
+                        <autoTerminate>true</autoTerminate>
+                        <name>original</name>
+                    </relationships>
+                    <relationships>
+                        <autoTerminate>true</autoTerminate>
+                        <name>output stream</name>
+                    </relationships>
+                    <state>DISABLED</state>
+                    <style/>
+                    <type>org.apache.nifi.processors.standard.ExecuteStreamCommand</type>
+                </processors>
+                <processors>
+                    <id>e3f3c2df-8fc7-3252-0000-000000000000</id>
+                    <parentGroupId>b8139c32-681d-3dc5-0000-000000000000</parentGroupId>
+                    <position>
+                        <x>832.9999978504111</x>
+                        <y>153.999984892469</y>
+                    </position>
+                    <versionedComponentId>323a6388-963c-3ae7-9fb3-c734b9afc83b</versionedComponentId>
+                    <bundle>
+                        <artifact>nifi-standard-nar</artifact>
+                        <group>org.apache.nifi</group>
+                        <version>1.8.0</version>
+                    </bundle>
+                    <config>
+                        <bulletinLevel>WARN</bulletinLevel>
+                        <comments></comments>
+                        <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
+                        <descriptors>
+                            <entry>
+<key>Directory</key>
+<value>
+    <name>Directory</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Conflict Resolution Strategy</key>
+<value>
+    <name>Conflict Resolution Strategy</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Create Missing Directories</key>
+<value>
+    <name>Create Missing Directories</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Maximum File Count</key>
+<value>
+    <name>Maximum File Count</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Last Modified Time</key>
+<value>
+    <name>Last Modified Time</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Permissions</key>
+<value>
+    <name>Permissions</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Owner</key>
+<value>
+    <name>Owner</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Group</key>
+<value>
+    <name>Group</name>
+</value>
+                            </entry>
+                        </descriptors>
+                        <executionNode>PRIMARY</executionNode>
+                        <lossTolerant>false</lossTolerant>
+                        <penaltyDuration>30 sec</penaltyDuration>
+                        <properties>
+                            <entry>
+<key>Directory</key>
+<value>/tmp</value>
+                            </entry>
+                            <entry>
+<key>Conflict Resolution Strategy</key>
+<value>replace</value>
+                            </entry>
+                            <entry>
+<key>Create Missing Directories</key>
+<value>false</value>
+                            </entry>
+                            <entry>
+<key>Maximum File Count</key>
+                            </entry>
+                            <entry>
+<key>Last Modified Time</key>
+                            </entry>
+                            <entry>
+<key>Permissions</key>
+<value>777</value>
+                            </entry>
+                            <entry>
+<key>Owner</key>
+                            </entry>
+                            <entry>
+<key>Group</key>
+                            </entry>
+                        </properties>
+                        <runDurationMillis>0</runDurationMillis>
+                        <schedulingPeriod>0 sec</schedulingPeriod>
+                        <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
+                        <yieldDuration>1 sec</yieldDuration>
+                    </config>
+                    <executionNodeRestricted>false</executionNodeRestricted>
+                    <name>PutFile</name>
+                    <relationships>
+                        <autoTerminate>true</autoTerminate>
+                        <name>failure</name>
+                    </relationships>
+                    <relationships>
+                        <autoTerminate>false</autoTerminate>
+                        <name>success</name>
+                    </relationships>
+                    <state>DISABLED</state>
+                    <style/>
+                    <type>org.apache.nifi.processors.standard.PutFile</type>
+                </processors>
+                <processors>
+                    <id>fcabf483-1159-381f-0000-000000000000</id>
+                    <parentGroupId>b8139c32-681d-3dc5-0000-000000000000</parentGroupId>
+                    <position>
+                        <x>378.9999978504111</x>
+                        <y>152.999984892469</y>
+                    </position>
+                    <versionedComponentId>42f33070-c900-396f-bd63-b5c32e3afc35</versionedComponentId>
+                    <bundle>
+                        <artifact>nifi-standard-nar</artifact>
+                        <group>org.apache.nifi</group>
+                        <version>1.8.0</version>
+                    </bundle>
+                    <config>
+                        <bulletinLevel>WARN</bulletinLevel>
+                        <comments></comments>
+                        <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
+                        <descriptors>
+                            <entry>
+<key>File Size</key>
+<value>
+    <name>File Size</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Batch Size</key>
+<value>
+    <name>Batch Size</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Data Format</key>
+<value>
+    <name>Data Format</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Unique FlowFiles</key>
+<value>
+    <name>Unique FlowFiles</name>
+</value>
+                            </entry>
+                            <entry>
+<key>generate-ff-custom-text</key>
+<value>
+    <name>generate-ff-custom-text</name>
+</value>
+                            </entry>
+                            <entry>
+<key>character-set</key>
+<value>
+    <name>character-set</name>
+</value>
+                            </entry>
+                            <entry>
+<key>bucket_name</key>
+<value>
+    <name>bucket_name</name>
+</value>
+                            </entry>
+                            <entry>
+<key>filename</key>
+<value>
+    <name>filename</name>
+</value>
+                            </entry>
+                            <entry>
+<key>flow_name</key>
+<value>
+    <name>flow_name</name>
+</value>
+                            </entry>
+                            <entry>
+<key>pg_id</key>
+<value>
+    <name>pg_id</name>
+</value>
+                            </entry>
+                            <entry>
+<key>target_version</key>
+<value>
+    <name>target_version</name>
+</value>
+                            </entry>
+                        </descriptors>
+                        <executionNode>PRIMARY</executionNode>
+                        <lossTolerant>false</lossTolerant>
+                        <penaltyDuration>30 sec</penaltyDuration>
+                        <properties>
+                            <entry>
+<key>File Size</key>
+<value>0B</value>
+                            </entry>
+                            <entry>
+<key>Batch Size</key>
+<value>1</value>
+                            </entry>
+                            <entry>
+<key>Data Format</key>
+<value>Text</value>
+                            </entry>
+                            <entry>
+<key>Unique FlowFiles</key>
+<value>false</value>
+                            </entry>
+                            <entry>
+<key>generate-ff-custom-text</key>
+<value>import argparse
+import nipyapi
+nipyapi.config.nifi_config.host = 'http://datacenter2:18881/nifi-api'
+nipyapi.config.registry_config.host = 'http://datacenter2:19090/nifi-registry-api'
+#Queues can be large - increase timeout
+nipyapi.config.short_max_wait = 3600
+
+parser = argparse.ArgumentParser()
+parser.add_argument('--pg_id', default=None)
+parser.add_argument('--bucket_name', default=None)
+parser.add_argument('--flow_name', default=None)
+parser.add_argument('--target_version', default=None)
+args = parser.parse_args()
+
+pg_id=args.pg_id
+bucket_name=args.bucket_name
+flow_name=args.flow_name
+target_version=args.target_version
+if target_version == 'latest':
+    target_version = None
+else:
+    target_version = int(target_version)
+
+def update_flow_ver(pg_id, bucket_name, flow_name, target_version=None):
+    bucket = nipyapi.versioning.get_registry_bucket(identifier=bucket_name, identifier_type='name')
+    flow = nipyapi.versioning.get_flow_in_bucket(bucket_id=bucket.identifier, identifier=flow_name, identifier_type='name')
+    pgs = nipyapi.canvas.list_all_process_groups(pg_id=pg_id)
+    total = len(pgs)
+    i = 0
+    for pg in pgs:
+        i += 1
+        ver_info = pg.component.version_control_information
+        if ver_info and ver_info.flow_id == flow.identifier:
+            nipyapi.versioning.update_flow_ver(pg, target_version)
+            print('--- [%s] updated, i=%d, total=%d' % (pg.component.name, i, total))
+    print('Done.')
+    return None
+
+if __name__ == '__main__':
+    update_flow_ver(pg_id, bucket_name, flow_name, target_version)</value>
+                            </entry>
+                            <entry>
+<key>character-set</key>
+<value>UTF-8</value>
+                            </entry>
+                            <entry>
+<key>bucket_name</key>
+<value>test</value>
+                            </entry>
+                            <entry>
+<key>filename</key>
+<value>tmp_nifi_update_flow_ver.py</value>
+                            </entry>
+                            <entry>
+<key>flow_name</key>
+<value>test</value>
+                            </entry>
+                            <entry>
+<key>pg_id</key>
+<value>ef2c1d9a-0168-1000-ffff-ffffdce527c8</value>
+                            </entry>
+                            <entry>
+<key>target_version</key>
+<value>latest</value>
+                            </entry>
+                        </properties>
+                        <runDurationMillis>0</runDurationMillis>
+                        <schedulingPeriod>11111111111111111 day</schedulingPeriod>
+                        <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
+                        <yieldDuration>1 sec</yieldDuration>
+                    </config>
+                    <executionNodeRestricted>false</executionNodeRestricted>
+                    <name>设置所有自定义属性，除了filename</name>
+                    <relationships>
+                        <autoTerminate>false</autoTerminate>
+                        <name>success</name>
+                    </relationships>
+                    <state>DISABLED</state>
+                    <style/>
+                    <type>org.apache.nifi.processors.standard.GenerateFlowFile</type>
+                </processors>
+            </contents>
+            <name>VersioningUpdateFlowVer</name>
+            <variables/>
+        </processGroups>
+    </snippet>
+    <timestamp>05/13/2019 17:15:41 CST</timestamp>
+</template>
