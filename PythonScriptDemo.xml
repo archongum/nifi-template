@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<template encoding-version="1.3">
+    <description></description>
+    <groupId>023a10c6-1000-116d-38e3-e1d8c0a7b363</groupId>
+    <name>Http-PythonScript</name>
+    <snippet>
+        <connections>
+            <id>087f3e7f-bc84-3c38-0000-000000000000</id>
+            <parentGroupId>36b14ffb-1aa8-3351-0000-000000000000</parentGroupId>
+            <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
+            <backPressureObjectThreshold>5000</backPressureObjectThreshold>
+            <destination>
+                <groupId>36b14ffb-1aa8-3351-0000-000000000000</groupId>
+                <id>d3036720-595b-33a3-0000-000000000000</id>
+                <type>FUNNEL</type>
+            </destination>
+            <flowFileExpiration>0 sec</flowFileExpiration>
+            <labelIndex>1</labelIndex>
+            <loadBalanceCompression>DO_NOT_COMPRESS</loadBalanceCompression>
+            <loadBalancePartitionAttribute></loadBalancePartitionAttribute>
+            <loadBalanceStatus>LOAD_BALANCE_NOT_CONFIGURED</loadBalanceStatus>
+            <loadBalanceStrategy>DO_NOT_LOAD_BALANCE</loadBalanceStrategy>
+            <name></name>
+            <selectedRelationships>success</selectedRelationships>
+            <source>
+                <groupId>36b14ffb-1aa8-3351-0000-000000000000</groupId>
+                <id>b07561ad-426f-36e9-0000-000000000000</id>
+                <type>PROCESSOR</type>
+            </source>
+            <zIndex>0</zIndex>
+        </connections>
+        <connections>
+            <id>4c78ff07-caec-3469-0000-000000000000</id>
+            <parentGroupId>36b14ffb-1aa8-3351-0000-000000000000</parentGroupId>
+            <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
+            <backPressureObjectThreshold>5000</backPressureObjectThreshold>
+            <destination>
+                <groupId>36b14ffb-1aa8-3351-0000-000000000000</groupId>
+                <id>b07561ad-426f-36e9-0000-000000000000</id>
+                <type>PROCESSOR</type>
+            </destination>
+            <flowFileExpiration>0 sec</flowFileExpiration>
+            <labelIndex>1</labelIndex>
+            <loadBalanceCompression>DO_NOT_COMPRESS</loadBalanceCompression>
+            <loadBalancePartitionAttribute></loadBalancePartitionAttribute>
+            <loadBalanceStatus>LOAD_BALANCE_NOT_CONFIGURED</loadBalanceStatus>
+            <loadBalanceStrategy>DO_NOT_LOAD_BALANCE</loadBalanceStrategy>
+            <name></name>
+            <selectedRelationships>success</selectedRelationships>
+            <source>
+                <groupId>36b14ffb-1aa8-3351-0000-000000000000</groupId>
+                <id>5008aa13-8a1d-34fb-0000-000000000000</id>
+                <type>PROCESSOR</type>
+            </source>
+            <zIndex>0</zIndex>
+        </connections>
+        <funnels>
+            <id>d3036720-595b-33a3-0000-000000000000</id>
+            <parentGroupId>36b14ffb-1aa8-3351-0000-000000000000</parentGroupId>
+            <position>
+                <x>136.0</x>
+                <y>472.0</y>
+            </position>
+        </funnels>
+        <processors>
+            <id>5008aa13-8a1d-34fb-0000-000000000000</id>
+            <parentGroupId>36b14ffb-1aa8-3351-0000-000000000000</parentGroupId>
+            <position>
+                <x>0.0</x>
+                <y>0.0</y>
+            </position>
+            <bundle>
+                <artifact>nifi-standard-nar</artifact>
+                <group>org.apache.nifi</group>
+                <version>1.10.0-SNAPSHOT</version>
+            </bundle>
+            <config>
+                <bulletinLevel>WARN</bulletinLevel>
+                <comments></comments>
+                <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
+                <descriptors>
+                    <entry>
+                        <key>File Size</key>
+                        <value>
+                            <name>File Size</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Batch Size</key>
+                        <value>
+                            <name>Batch Size</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Data Format</key>
+                        <value>
+                            <name>Data Format</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Unique FlowFiles</key>
+                        <value>
+                            <name>Unique FlowFiles</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>generate-ff-custom-text</key>
+                        <value>
+                            <name>generate-ff-custom-text</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>character-set</key>
+                        <value>
+                            <name>character-set</name>
+                        </value>
+                    </entry>
+                </descriptors>
+                <executionNode>PRIMARY</executionNode>
+                <lossTolerant>false</lossTolerant>
+                <penaltyDuration>30 sec</penaltyDuration>
+                <properties>
+                    <entry>
+                        <key>File Size</key>
+                        <value>0B</value>
+                    </entry>
+                    <entry>
+                        <key>Batch Size</key>
+                        <value>1</value>
+                    </entry>
+                    <entry>
+                        <key>Data Format</key>
+                        <value>Text</value>
+                    </entry>
+                    <entry>
+                        <key>Unique FlowFiles</key>
+                        <value>false</value>
+                    </entry>
+                    <entry>
+                        <key>generate-ff-custom-text</key>
+                        <value>#Version: 1
+#Serial: 20190903
+1bet.com
+1xbet.com
+22bet.com
+bahigo.com
+bet-at-home.com
+bet365.com
+betclic.com
+betworld.com
+betworld1.com
+betworld2.com
+betworld3.com
+betworld4.com
+betworld5.com
+betworld6.com
+betworld7.com
+betworld8.com
+betworld9.com
+betworld10.com
+betworld11.com
+betworld12.com
+betworld13.com
+betworld14.com
+betworld15.com
+betworld16.com
+betworld17.com
+betworld18.com
+betworld19.com
+bsupporter.com
+cashpoint.com
+expekt.com
+forzza.com
+intertops.eu
+interwetten.com
+interwetten1.com
+interwetten2.com
+interwetten3.com
+interwetten4.com
+interwetten5.com
+interwetten6.com
+lsbet.com
+mybet.com
+pinnacle.com
+siskobet.com
+solobet.com
+solobet1.com
+solobet2.com
+solobet3.com
+sunmaker.com
+thelotter.com
+tipbet.com
+tipwin.com
+tipwin.de
+tipxbet.com
+topsport.lt
+unibet.com
+unikrn.com
+uwin4u.com
+wir-wetten.com
+wirwetten.com
+xbet-1.com
+xbet-2.com
+xbet-3.com
+xbet-4.com
+xbet-5.com
+xtip.de</value>
+                    </entry>
+                    <entry>
+                        <key>character-set</key>
+                        <value>UTF-8</value>
+                    </entry>
+                </properties>
+                <runDurationMillis>0</runDurationMillis>
+                <schedulingPeriod>11111 week</schedulingPeriod>
+                <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
+                <yieldDuration>1 sec</yieldDuration>
+            </config>
+            <executionNodeRestricted>false</executionNodeRestricted>
+            <name>GenerateFlowFile</name>
+            <relationships>
+                <autoTerminate>false</autoTerminate>
+                <name>success</name>
+            </relationships>
+            <state>STOPPED</state>
+            <style/>
+            <type>org.apache.nifi.processors.standard.GenerateFlowFile</type>
+        </processors>
+        <processors>
+            <id>b07561ad-426f-36e9-0000-000000000000</id>
+            <parentGroupId>36b14ffb-1aa8-3351-0000-000000000000</parentGroupId>
+            <position>
+                <x>8.0</x>
+                <y>224.0</y>
+            </position>
+            <bundle>
+                <artifact>nifi-scripting-nar</artifact>
+                <group>org.apache.nifi</group>
+                <version>1.10.0-SNAPSHOT</version>
+            </bundle>
+            <config>
+                <bulletinLevel>WARN</bulletinLevel>
+                <comments></comments>
+                <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
+                <descriptors>
+                    <entry>
+                        <key>Script Engine</key>
+                        <value>
+                            <name>Script Engine</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Script File</key>
+                        <value>
+                            <name>Script File</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Script Body</key>
+                        <value>
+                            <name>Script Body</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Module Directory</key>
+                        <value>
+                            <name>Module Directory</name>
+                        </value>
+                    </entry>
+                </descriptors>
+                <executionNode>ALL</executionNode>
+                <lossTolerant>false</lossTolerant>
+                <penaltyDuration>30 sec</penaltyDuration>
+                <properties>
+                    <entry>
+                        <key>Script Engine</key>
+                        <value>python</value>
+                    </entry>
+                    <entry>
+                        <key>Script File</key>
+                    </entry>
+                    <entry>
+                        <key>Script Body</key>
+                        <value>from java.nio.charset import StandardCharsets
+from org.apache.commons.io import IOUtils
+from org.apache.nifi.processor.io import StreamCallback
+
+
+class PyStreamCallback(StreamCallback):
+    def __init__(self):
+        pass
+
+    def process(self, inputStream, outputStream):
+        lines = IOUtils.lineIterator(inputStream, StandardCharsets.UTF_8)
+        if lines.hasNext():
+            # Write header first
+            outputStream.write('"header-blacklistrule","parent","domain_name","action"\n')
+        while lines.hasNext():
+            line = lines.nextLine()
+            if line[0] == '#':
+                continue
+            outputStream.write('"BlacklistRule","geldspielgesetz","%s","REDIRECT"\n' % line)
+
+flow_file = session.get()
+
+if flow_file:
+    try:
+        flow_file = session.write(flow_file, PyStreamCallback())
+        session.transfer(flow_file, REL_SUCCESS)
+    except Exception, e:
+        session.transfer(flow_file, REL_FAILURE)</value>
+                    </entry>
+                    <entry>
+                        <key>Module Directory</key>
+                    </entry>
+                </properties>
+                <runDurationMillis>0</runDurationMillis>
+                <schedulingPeriod>1 sec</schedulingPeriod>
+                <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
+                <yieldDuration>1 sec</yieldDuration>
+            </config>
+            <executionNodeRestricted>false</executionNodeRestricted>
+            <name>ExecuteScript</name>
+            <relationships>
+                <autoTerminate>true</autoTerminate>
+                <name>failure</name>
+            </relationships>
+            <relationships>
+                <autoTerminate>false</autoTerminate>
+                <name>success</name>
+            </relationships>
+            <state>STOPPED</state>
+            <style/>
+            <type>org.apache.nifi.processors.script.ExecuteScript</type>
+        </processors>
+    </snippet>
+    <timestamp>09/06/2019 12:03:57 CST</timestamp>
+</template>
